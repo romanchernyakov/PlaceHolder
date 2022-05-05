@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Avenir next m";
+    src: url("../assets/avenirnextcyr-medium.ttf");
+}
+@font-face {
+    font-family: "Avenir next reg";
+    src: url("../assets/avenirnextcyr-regular.ttf");
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 50px;
+    left: 180px;
+    transition: 0.2s;
+}
+    .logo img:hover{
+        width: 30px;
+        position: relative;
+        top: 45px;
+        left: 180px;
+    }
+
+.hometable {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -160px 0px 0px -160px;
+    height: 320px;
+    width: 320px;
+    border: 2px #313131 solid;
+}
+
+.hometable a {
+    font-family: "Avenir next m";
+    color: rgb(43, 43, 43);
+    text-decoration: none;
+    font-size: 20pt;
+    font-style: normal;
+    font-weight: normal;
+    transition: color 0.2s, background-color 0.2s;
+}
+    .hometable a:visited {
+        color: rgb(31, 31, 31);
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    .hometable a:hover {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-family: "Avenir next m";
+        background-color: rgb(43, 43, 43) ;
+    }
+
+.catalog {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 200px;
+    width: 220px;
+    border-right: 2px #313131 solid;
+    border-bottom: 2px #313131 solid;
+    text-align: center;
+    line-height: 205px;
+    vertical-align: middle;}
+
+.contacts{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 120px;
+    width: 220px;
+    border-right: 2px #313131 solid;
+    text-align: center;
+    line-height: 120px;
+    vertical-align: middle
+}
+
+.blank2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 120px;
+    width: 100px;
+    border-bottom: 2px #313131 solid; 
+}
+.blank3{
+    height: 100px;
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    z-index: 100;
+  }
+  
+  .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+  }
+  
+  .loaded_hiding .preloader {
+    transition: opacity 0.3s ;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }

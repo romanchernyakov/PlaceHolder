@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Placeholder</title>
+    <link rel="shortcut icon" href="assets/icon.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+      </script>
+    <!-- logo -->
+    <div class="logo">
+       <a href=""><img src="assets/icon.svg" alt=""></a>
+    </div>
+
+    <!-- nav -->
+    <div class="hometable">
+        <a class="catalog" href="catalogАRuB.html">Каталог</a>
+        <a class="contacts" href="https://www.instagram.com/placeholder_biblioteka/">Контакты</a>
+        <div class="blank2">
+        <div class="blank3">
+    </div> 
+</body>
+</html>

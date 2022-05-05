@@ -1,0 +1,302 @@
+@font-face {
+    font-family: "Avenir next m";
+    src: url("../assets/avenirnextcyr-medium.ttf");
+}
+@font-face {
+    font-family: "Avenir next reg";
+    src: url("../assets/avenirnextcyr-regular.ttf");
+}
+
+
+/* лого */
+*{
+    font-family: "Avenir next m";
+}
+
+.logo img {
+    width: 30px;
+    position: relative;
+    top: 50px;
+    left: 180px;
+    transition: 0.2s;
+}
+    .logo img:hover{
+        width: 30px;
+        position: relative;
+        top: 45px;
+        left: 180px;
+    }
+
+
+/* кнопки */
+
+.author_name { 
+    position: absolute;
+    top: 103px;
+    left: 211px;
+    width: 200px;
+    height: 33px;
+    border: 1px solid rgb(49, 49, 49);
+    text-align: center;
+    vertical-align: middle;
+    z-index: 0;
+}
+.author_name a{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    text-align: center;
+    height: 33px;
+    z-index: 0;
+
+    font-family: "Avenir next m" ;
+    color:rgb(49, 49, 49) ;
+    text-decoration: none;
+    display: block;
+    line-height: 30px;
+    padding-bottom: 3px;
+    transition: 0.2s;
+}
+    .author_name a:hover {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 200px;
+        text-align: center;
+        height: 33px;
+
+        font-family: "Avenir next m" ;
+        background-color: rgb(49, 49, 49) ;
+        color:rgb(255, 255, 255) ;
+        text-decoration: none;
+        display: block;
+        line-height: 30px;
+        padding-bottom: 3px;
+    }     
+
+.lang { 
+    position: absolute;
+    top: 103px;
+    left: 180px;
+    width: 30px;
+    height: 33px;
+    border: 1px solid rgb(49, 49, 49);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.lang a{
+    display: block;
+    font-family:"Avenir next m" ;
+    font-size: 10pt;
+    color:rgb(49, 49, 49) ;
+    text-decoration: none;
+    line-height: 33px;
+    transition: color 0.2s, background-color 0.2s;
+}
+    .lang a:hover {
+        top: 103px;
+        left: 180px;
+        width: 30px;
+        height: 33px;
+        line-height: 33px;
+        text-align: center;
+        vertical-align: middle;
+        background-color: rgb(49, 49, 49);
+        color: white;
+        font-family:"Avenir next m" ;
+        font-size: 10pt;
+    }
+
+
+/* алфавит */
+
+.alphabetRu {
+    position: absolute;
+    top: 137px;
+    left: 180px;
+    border-bottom: 1px rgb(49, 49, 49) solid;
+    border-left: 1px rgb(49, 49, 49) inset;
+    border-right: 1px rgb(49, 49, 49) inset;
+    width: 631px;
+}
+
+.alphabetRu:after {
+    margin-top: 1px; ;
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: white;
+    height: 42px;
+    width: 300px;
+
+}
+
+.alphabetRu a {
+    display: block;
+    position: relative;
+    right: 0px;
+    width: 30px;
+    height: 35px;
+    border: 1px solid rgb(49, 49, 49);
+    margin-left: -1px;
+    background-color: white;
+
+    font-family: "Avenir next m";
+    font-size: 14pt;
+    line-height: 35px;
+    color: rgb(49, 49, 49);
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: -1px;
+
+    transition: padding 0.2s, right 0.2s;
+}
+
+    .alphabetRu a:visited {
+        color: rgb(49, 49, 49);
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+    }
+    .alphabetRu a:hover {
+        z-index: 10;
+        width: 30px;
+        display: block;
+
+        padding-right: 20px;
+        right: 20px;
+
+        background-color: rgb(49, 49, 49);
+        color: white;
+        border: 1px solid rgb(49, 49, 49);
+        text-align: center;
+    }
+
+
+/* альбом */
+
+.album {
+    position: absolute;
+    left: 211px;
+    cursor: default;
+    z-index: 1;
+    top: 138px;
+    padding-bottom: 43px;
+}
+.name {
+    user-select: none;
+    font-size: 12pt;
+    font-family: "Avenir next m";
+    color: rgb(49, 49, 49);
+    padding: 5px 0px 0px 15px;
+    overflow: auto;
+    line-height: 16pt;
+    width: 400px;
+}
+.author {
+    user-select: none;
+    font-size: 8pt;
+    font-family: "Avenir next reg";
+    color:gray ;
+    padding: 0px 0px 6px 15px;
+    overflow: auto;
+    line-break: loose;
+    line-height: 12pt;
+    width: 400px;
+}
+.book {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    border: 1px solid rgb(49, 49, 49);
+    margin: -1px 0px;
+    width: 600px;
+    cursor: default;
+    opacity: 100%;
+    background-color: white;
+    transition: padding 0.2s;
+}
+
+.book_link {
+    text-decoration: none;
+    cursor: default;
+    background-color: white;
+}
+
+    .book:hover {
+        background-color:rgb(49, 49, 49);
+        color: white;
+        padding-bottom: 10px;
+        cursor: default;
+    }
+    .book:hover .author{
+        color: rgb(212, 212, 212);
+        cursor: default;
+    }
+    .book:hover .name{
+        color: rgb(255, 255, 255);
+        cursor: default;
+    }
+    .book:hover .photo img {
+        opacity: 1;
+        z-index: 2;
+        left: 0%;
+    }
+
+
+/* фото */
+
+.photo {
+    position: fixed;
+    left: 812px;
+    top: 137px;
+    height: 550px;
+    width: 500px;
+    z-index: 2;
+    border: 1px rgb(49, 49, 49) ridge;
+    overflow: hidden;
+}
+.photo img {
+    left: -100%;
+    position: relative;
+    max-height: 550px;
+    max-width: 500px;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 0.4s, left 0.4s;
+} 
+
+/* preloader */
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    z-index: 100;
+  }
+  
+  .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+  }
+  
+  .loaded_hiding .preloader {
+    transition: opacity 0.3s ;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
